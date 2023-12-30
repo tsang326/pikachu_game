@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pikachu_game">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/pikachu"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/pikachu"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pikachu_Game">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDvF008XdfsMI2--XA2ySRk70GYaqFaTtw" />
+
+
+        <activity
+            android:name=".Activity_Start"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity_Game"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name=".Activity_GameOver"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            />
+
+    </application>
+
+</manifest>

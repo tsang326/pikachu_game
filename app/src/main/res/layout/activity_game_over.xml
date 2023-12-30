@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_GameOver">
+
+    <ImageView
+        android:id="@+id/panel_IMG_gameOver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/game_over_LAY_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/game_over_TXT_pikachu_survive"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="Pikachu Survived"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/game_over_TXT_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_over_TXT_pikachu_survive"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:textColor="#031EB3"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/game_over_TXT_sec"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/game_over_TXT_time"
+            android:gravity="center"
+            android:text="Seconds"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/game_over_BTN_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_over_LAY_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#1B37D5"
+        android:text="Play Again" />
+
+    <Button
+        android:id="@+id/game_over_BTN_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_over_BTN_restart"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#1B37D5"
+        android:text="Go Back To Home Page" />
+
+
+</RelativeLayout>
